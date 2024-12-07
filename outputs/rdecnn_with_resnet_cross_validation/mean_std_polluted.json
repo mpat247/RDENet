@@ -1,0 +1,10 @@
+{
+    "train_loss_mean": 0.39487328329999044,
+    "train_loss_std": 0.11006173442869775,
+    "train_accuracy_mean": 85.48355704697987,
+    "train_accuracy_std": 4.130244919492453,
+    "val_loss_mean": 0.3591151257793109,
+    "val_loss_std": 0.00445298086218416,
+    "val_accuracy_mean": 86.97,
+    "val_accuracy_std": 0.1497776129244056
+}

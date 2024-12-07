@@ -1,0 +1,104 @@
+2024-12-03 18:29:39,815 INFO:Starting training and testing scenarios.
+2024-12-03 18:29:39,966 INFO:Starting training with normal data.
+2024-12-03 18:30:55,765 INFO:Scenario: normal, Epoch 1/50, Train Loss: 0.5052, Train Acc: 82.07%, Val Loss: 0.3216, Val Acc: 88.19%, Duration: 70.39s
+2024-12-03 18:32:09,928 INFO:Scenario: normal, Epoch 2/50, Train Loss: 0.3127, Train Acc: 88.95%, Val Loss: 0.3005, Val Acc: 89.31%, Duration: 69.59s
+2024-12-03 18:33:22,020 INFO:Scenario: normal, Epoch 3/50, Train Loss: 0.2651, Train Acc: 90.62%, Val Loss: 0.2433, Val Acc: 91.22%, Duration: 67.53s
+2024-12-03 18:34:35,581 INFO:Scenario: normal, Epoch 4/50, Train Loss: 0.2315, Train Acc: 91.72%, Val Loss: 0.2428, Val Acc: 91.40%, Duration: 68.92s
+2024-12-03 18:35:48,305 INFO:Scenario: normal, Epoch 5/50, Train Loss: 0.2026, Train Acc: 92.78%, Val Loss: 0.2294, Val Acc: 91.87%, Duration: 68.00s
+2024-12-03 18:36:59,516 INFO:Scenario: normal, Epoch 6/50, Train Loss: 0.1829, Train Acc: 93.65%, Val Loss: 0.2207, Val Acc: 92.24%, Duration: 66.69s
+2024-12-03 18:38:12,242 INFO:Scenario: normal, Epoch 7/50, Train Loss: 0.1610, Train Acc: 94.25%, Val Loss: 0.2258, Val Acc: 92.16%, Duration: 68.27s
+2024-12-03 18:39:24,572 INFO:Scenario: normal, Epoch 8/50, Train Loss: 0.1451, Train Acc: 94.92%, Val Loss: 0.2395, Val Acc: 92.00%, Duration: 67.93s
+2024-12-03 18:40:37,632 INFO:Scenario: normal, Epoch 9/50, Train Loss: 0.1285, Train Acc: 95.52%, Val Loss: 0.2595, Val Acc: 91.93%, Duration: 68.70s
+2024-12-03 18:41:50,105 INFO:Scenario: normal, Epoch 10/50, Train Loss: 0.1168, Train Acc: 96.00%, Val Loss: 0.2619, Val Acc: 91.79%, Duration: 68.08s
+2024-12-03 18:43:02,437 INFO:Scenario: normal, Epoch 11/50, Train Loss: 0.0992, Train Acc: 96.46%, Val Loss: 0.2772, Val Acc: 91.98%, Duration: 67.91s
+2024-12-03 18:44:15,119 INFO:Scenario: normal, Epoch 12/50, Train Loss: 0.0849, Train Acc: 97.06%, Val Loss: 0.2790, Val Acc: 92.04%, Duration: 68.27s
+2024-12-03 18:45:28,052 INFO:Scenario: normal, Epoch 13/50, Train Loss: 0.0756, Train Acc: 97.35%, Val Loss: 0.3174, Val Acc: 91.51%, Duration: 68.53s
+2024-12-03 18:46:38,478 INFO:Scenario: normal, Epoch 14/50, Train Loss: 0.0674, Train Acc: 97.63%, Val Loss: 0.3561, Val Acc: 91.48%, Duration: 66.14s
+2024-12-03 18:47:49,089 INFO:Scenario: normal, Epoch 15/50, Train Loss: 0.0592, Train Acc: 97.94%, Val Loss: 0.2995, Val Acc: 92.02%, Duration: 66.26s
+2024-12-03 18:48:58,562 INFO:Scenario: normal, Epoch 16/50, Train Loss: 0.0524, Train Acc: 98.23%, Val Loss: 0.3143, Val Acc: 91.76%, Duration: 65.14s
+2024-12-03 18:48:58,563 INFO:Early stopping triggered for scenario: normal at epoch 16
+2024-12-03 18:48:58,656 INFO:Testing model trained on normal data on normal test data.
+2024-12-03 18:49:04,001 INFO:Scenario: normal_normal, Test Loss: 0.2345, Test Accuracy: 91.96%
+2024-12-03 18:49:04,002 INFO:Testing model trained on normal data on polluted test data.
+2024-12-03 18:49:10,579 INFO:Scenario: normal_polluted, Test Loss: 1.8528, Test Accuracy: 48.38%
+2024-12-03 18:49:10,579 INFO:Starting training with polluted data.
+2024-12-03 18:50:28,009 INFO:Scenario: polluted, Epoch 1/50, Train Loss: 0.6321, Train Acc: 77.03%, Val Loss: 0.4998, Val Acc: 81.66%, Duration: 70.62s
+2024-12-03 18:51:44,395 INFO:Scenario: polluted, Epoch 2/50, Train Loss: 0.4401, Train Acc: 84.07%, Val Loss: 0.4402, Val Acc: 83.57%, Duration: 70.39s
+2024-12-03 18:53:04,937 INFO:Scenario: polluted, Epoch 3/50, Train Loss: 0.3840, Train Acc: 86.00%, Val Loss: 0.4143, Val Acc: 85.00%, Duration: 74.38s
+2024-12-03 18:54:23,954 INFO:Scenario: polluted, Epoch 4/50, Train Loss: 0.3523, Train Acc: 87.15%, Val Loss: 0.3440, Val Acc: 87.43%, Duration: 72.70s
+2024-12-03 18:55:42,548 INFO:Scenario: polluted, Epoch 5/50, Train Loss: 0.3225, Train Acc: 88.30%, Val Loss: 0.3362, Val Acc: 87.63%, Duration: 72.44s
+2024-12-03 18:57:01,291 INFO:Scenario: polluted, Epoch 6/50, Train Loss: 0.3080, Train Acc: 88.85%, Val Loss: 0.3072, Val Acc: 88.89%, Duration: 71.72s
+2024-12-03 18:58:20,614 INFO:Scenario: polluted, Epoch 7/50, Train Loss: 0.2939, Train Acc: 89.25%, Val Loss: 0.3136, Val Acc: 88.17%, Duration: 73.16s
+2024-12-03 18:59:41,727 INFO:Scenario: polluted, Epoch 8/50, Train Loss: 0.2776, Train Acc: 90.02%, Val Loss: 0.3037, Val Acc: 89.14%, Duration: 75.10s
+2024-12-03 19:01:00,224 INFO:Scenario: polluted, Epoch 9/50, Train Loss: 0.2692, Train Acc: 90.31%, Val Loss: 0.2826, Val Acc: 89.89%, Duration: 72.37s
+2024-12-03 19:02:19,020 INFO:Scenario: polluted, Epoch 10/50, Train Loss: 0.2549, Train Acc: 90.78%, Val Loss: 0.3075, Val Acc: 88.94%, Duration: 72.50s
+2024-12-03 19:03:37,220 INFO:Scenario: polluted, Epoch 11/50, Train Loss: 0.2477, Train Acc: 91.04%, Val Loss: 0.2898, Val Acc: 89.16%, Duration: 72.28s
+2024-12-03 19:04:55,648 INFO:Scenario: polluted, Epoch 12/50, Train Loss: 0.2441, Train Acc: 91.17%, Val Loss: 0.2992, Val Acc: 89.70%, Duration: 72.43s
+2024-12-03 19:06:14,001 INFO:Scenario: polluted, Epoch 13/50, Train Loss: 0.2357, Train Acc: 91.59%, Val Loss: 0.2853, Val Acc: 89.86%, Duration: 72.37s
+2024-12-03 19:07:32,471 INFO:Scenario: polluted, Epoch 14/50, Train Loss: 0.2234, Train Acc: 91.75%, Val Loss: 0.2844, Val Acc: 89.79%, Duration: 72.19s
+2024-12-03 19:08:50,760 INFO:Scenario: polluted, Epoch 15/50, Train Loss: 0.2199, Train Acc: 92.14%, Val Loss: 0.2747, Val Acc: 90.26%, Duration: 71.55s
+2024-12-03 19:10:09,596 INFO:Scenario: polluted, Epoch 16/50, Train Loss: 0.2138, Train Acc: 92.14%, Val Loss: 0.2564, Val Acc: 90.58%, Duration: 72.63s
+2024-12-03 19:11:28,690 INFO:Scenario: polluted, Epoch 17/50, Train Loss: 0.2059, Train Acc: 92.57%, Val Loss: 0.2571, Val Acc: 90.93%, Duration: 72.79s
+2024-12-03 19:12:47,378 INFO:Scenario: polluted, Epoch 18/50, Train Loss: 0.2014, Train Acc: 92.79%, Val Loss: 0.2584, Val Acc: 90.93%, Duration: 72.69s
+2024-12-03 19:14:05,910 INFO:Scenario: polluted, Epoch 19/50, Train Loss: 0.1956, Train Acc: 92.93%, Val Loss: 0.2656, Val Acc: 90.78%, Duration: 72.54s
+2024-12-03 19:15:24,307 INFO:Scenario: polluted, Epoch 20/50, Train Loss: 0.1919, Train Acc: 92.96%, Val Loss: 0.2549, Val Acc: 90.96%, Duration: 72.39s
+2024-12-03 19:16:43,215 INFO:Scenario: polluted, Epoch 21/50, Train Loss: 0.1894, Train Acc: 93.03%, Val Loss: 0.2562, Val Acc: 91.09%, Duration: 72.77s
+2024-12-03 19:18:01,740 INFO:Scenario: polluted, Epoch 22/50, Train Loss: 0.1816, Train Acc: 93.48%, Val Loss: 0.2507, Val Acc: 91.11%, Duration: 72.37s
+2024-12-03 19:19:20,787 INFO:Scenario: polluted, Epoch 23/50, Train Loss: 0.1802, Train Acc: 93.49%, Val Loss: 0.2848, Val Acc: 90.74%, Duration: 72.64s
+2024-12-03 19:20:38,518 INFO:Scenario: polluted, Epoch 24/50, Train Loss: 0.1753, Train Acc: 93.54%, Val Loss: 0.2535, Val Acc: 91.02%, Duration: 71.81s
+2024-12-03 19:21:58,105 INFO:Scenario: polluted, Epoch 25/50, Train Loss: 0.1722, Train Acc: 93.78%, Val Loss: 0.2697, Val Acc: 90.93%, Duration: 73.65s
+2024-12-03 19:23:15,278 INFO:Scenario: polluted, Epoch 26/50, Train Loss: 0.1659, Train Acc: 94.02%, Val Loss: 0.2651, Val Acc: 91.01%, Duration: 71.22s
+2024-12-03 19:24:32,408 INFO:Scenario: polluted, Epoch 27/50, Train Loss: 0.1610, Train Acc: 94.19%, Val Loss: 0.2566, Val Acc: 91.00%, Duration: 71.18s
+2024-12-03 19:25:51,018 INFO:Scenario: polluted, Epoch 28/50, Train Loss: 0.1613, Train Acc: 94.29%, Val Loss: 0.2438, Val Acc: 91.77%, Duration: 72.76s
+2024-12-03 19:27:08,135 INFO:Scenario: polluted, Epoch 29/50, Train Loss: 0.1519, Train Acc: 94.51%, Val Loss: 0.2472, Val Acc: 91.88%, Duration: 71.13s
+2024-12-03 19:28:27,553 INFO:Scenario: polluted, Epoch 30/50, Train Loss: 0.1513, Train Acc: 94.60%, Val Loss: 0.2475, Val Acc: 91.78%, Duration: 73.17s
+2024-12-03 19:29:46,348 INFO:Scenario: polluted, Epoch 31/50, Train Loss: 0.1470, Train Acc: 94.61%, Val Loss: 0.2492, Val Acc: 91.69%, Duration: 72.75s
+2024-12-03 19:31:05,095 INFO:Scenario: polluted, Epoch 32/50, Train Loss: 0.1427, Train Acc: 94.89%, Val Loss: 0.2632, Val Acc: 91.23%, Duration: 72.71s
+2024-12-03 19:32:23,944 INFO:Scenario: polluted, Epoch 33/50, Train Loss: 0.1411, Train Acc: 94.92%, Val Loss: 0.2577, Val Acc: 91.36%, Duration: 71.93s
+2024-12-03 19:33:42,683 INFO:Scenario: polluted, Epoch 34/50, Train Loss: 0.1359, Train Acc: 95.07%, Val Loss: 0.2934, Val Acc: 90.80%, Duration: 72.02s
+2024-12-03 19:35:01,219 INFO:Scenario: polluted, Epoch 35/50, Train Loss: 0.1370, Train Acc: 95.11%, Val Loss: 0.2662, Val Acc: 91.40%, Duration: 71.77s
+2024-12-03 19:36:19,121 INFO:Scenario: polluted, Epoch 36/50, Train Loss: 0.1303, Train Acc: 95.20%, Val Loss: 0.2956, Val Acc: 90.77%, Duration: 71.89s
+2024-12-03 19:37:37,938 INFO:Scenario: polluted, Epoch 37/50, Train Loss: 0.1271, Train Acc: 95.43%, Val Loss: 0.2613, Val Acc: 91.46%, Duration: 72.76s
+2024-12-03 19:38:57,835 INFO:Scenario: polluted, Epoch 38/50, Train Loss: 0.1249, Train Acc: 95.54%, Val Loss: 0.2681, Val Acc: 90.93%, Duration: 73.75s
+2024-12-03 19:38:57,837 INFO:Early stopping triggered for scenario: polluted at epoch 38
+2024-12-03 19:38:57,974 INFO:Testing model trained on polluted data on normal test data.
+2024-12-03 19:39:02,883 INFO:Scenario: polluted_normal, Test Loss: 0.4641, Test Accuracy: 83.94%
+2024-12-03 19:39:02,884 INFO:Testing model trained on polluted data on polluted test data.
+2024-12-03 19:39:09,361 INFO:Scenario: polluted_polluted, Test Loss: 0.2662, Test Accuracy: 90.98%
+2024-12-03 19:39:09,362 INFO:Starting training with mixed data.
+2024-12-03 19:41:41,119 INFO:Scenario: mixed, Epoch 1/50, Train Loss: 0.5302, Train Acc: 80.84%, Val Loss: 0.3833, Val Acc: 86.28%, Duration: 141.26s
+2024-12-03 19:44:13,277 INFO:Scenario: mixed, Epoch 2/50, Train Loss: 0.3549, Train Acc: 87.32%, Val Loss: 0.3368, Val Acc: 88.09%, Duration: 141.52s
+2024-12-03 19:46:46,916 INFO:Scenario: mixed, Epoch 3/50, Train Loss: 0.3043, Train Acc: 89.16%, Val Loss: 0.3168, Val Acc: 88.86%, Duration: 142.96s
+2024-12-03 19:49:22,114 INFO:Scenario: mixed, Epoch 4/50, Train Loss: 0.2704, Train Acc: 90.23%, Val Loss: 0.3077, Val Acc: 89.00%, Duration: 144.57s
+2024-12-03 19:51:57,013 INFO:Scenario: mixed, Epoch 5/50, Train Loss: 0.2469, Train Acc: 91.12%, Val Loss: 0.2687, Val Acc: 90.38%, Duration: 144.14s
+2024-12-03 19:54:32,178 INFO:Scenario: mixed, Epoch 6/50, Train Loss: 0.2281, Train Acc: 91.70%, Val Loss: 0.2448, Val Acc: 91.23%, Duration: 143.64s
+2024-12-03 19:57:06,390 INFO:Scenario: mixed, Epoch 7/50, Train Loss: 0.2115, Train Acc: 92.40%, Val Loss: 0.2527, Val Acc: 90.96%, Duration: 143.61s
+2024-12-03 19:59:39,078 INFO:Scenario: mixed, Epoch 8/50, Train Loss: 0.1995, Train Acc: 92.88%, Val Loss: 0.2359, Val Acc: 91.50%, Duration: 142.28s
+2024-12-03 20:02:11,682 INFO:Scenario: mixed, Epoch 9/50, Train Loss: 0.1874, Train Acc: 93.27%, Val Loss: 0.2355, Val Acc: 91.67%, Duration: 142.14s
+2024-12-03 20:04:43,494 INFO:Scenario: mixed, Epoch 10/50, Train Loss: 0.1739, Train Acc: 93.68%, Val Loss: 0.2296, Val Acc: 91.88%, Duration: 141.44s
+2024-12-03 20:07:14,953 INFO:Scenario: mixed, Epoch 11/50, Train Loss: 0.1648, Train Acc: 94.08%, Val Loss: 0.2412, Val Acc: 91.95%, Duration: 141.04s
+2024-12-03 20:09:46,943 INFO:Scenario: mixed, Epoch 12/50, Train Loss: 0.1562, Train Acc: 94.40%, Val Loss: 0.2460, Val Acc: 91.77%, Duration: 141.67s
+2024-12-03 20:12:18,982 INFO:Scenario: mixed, Epoch 13/50, Train Loss: 0.1481, Train Acc: 94.70%, Val Loss: 0.2292, Val Acc: 92.07%, Duration: 141.57s
+2024-12-03 20:14:51,096 INFO:Scenario: mixed, Epoch 14/50, Train Loss: 0.1403, Train Acc: 94.90%, Val Loss: 0.2320, Val Acc: 92.09%, Duration: 141.65s
+2024-12-03 20:17:22,671 INFO:Scenario: mixed, Epoch 15/50, Train Loss: 0.1313, Train Acc: 95.29%, Val Loss: 0.2336, Val Acc: 92.53%, Duration: 141.05s
+2024-12-03 20:19:54,837 INFO:Scenario: mixed, Epoch 16/50, Train Loss: 0.1269, Train Acc: 95.41%, Val Loss: 0.2461, Val Acc: 92.16%, Duration: 141.63s
+2024-12-03 20:22:27,169 INFO:Scenario: mixed, Epoch 17/50, Train Loss: 0.1232, Train Acc: 95.65%, Val Loss: 0.2274, Val Acc: 92.58%, Duration: 142.10s
+2024-12-03 20:24:59,526 INFO:Scenario: mixed, Epoch 18/50, Train Loss: 0.1165, Train Acc: 95.81%, Val Loss: 0.2322, Val Acc: 92.62%, Duration: 141.81s
+2024-12-03 20:27:30,988 INFO:Scenario: mixed, Epoch 19/50, Train Loss: 0.1106, Train Acc: 96.03%, Val Loss: 0.2542, Val Acc: 92.35%, Duration: 141.03s
+2024-12-03 20:30:03,383 INFO:Scenario: mixed, Epoch 20/50, Train Loss: 0.1099, Train Acc: 96.05%, Val Loss: 0.2274, Val Acc: 92.74%, Duration: 141.90s
+2024-12-03 20:32:35,850 INFO:Scenario: mixed, Epoch 21/50, Train Loss: 0.1038, Train Acc: 96.37%, Val Loss: 0.2428, Val Acc: 92.65%, Duration: 142.00s
+2024-12-03 20:35:07,027 INFO:Scenario: mixed, Epoch 22/50, Train Loss: 0.1003, Train Acc: 96.40%, Val Loss: 0.2417, Val Acc: 92.85%, Duration: 140.82s
+2024-12-03 20:37:39,229 INFO:Scenario: mixed, Epoch 23/50, Train Loss: 0.0962, Train Acc: 96.64%, Val Loss: 0.2592, Val Acc: 92.26%, Duration: 141.87s
+2024-12-03 20:40:11,032 INFO:Scenario: mixed, Epoch 24/50, Train Loss: 0.0935, Train Acc: 96.60%, Val Loss: 0.2442, Val Acc: 92.71%, Duration: 141.44s
+2024-12-03 20:42:43,063 INFO:Scenario: mixed, Epoch 25/50, Train Loss: 0.0909, Train Acc: 96.74%, Val Loss: 0.2475, Val Acc: 92.53%, Duration: 141.61s
+2024-12-03 20:45:14,470 INFO:Scenario: mixed, Epoch 26/50, Train Loss: 0.0919, Train Acc: 96.78%, Val Loss: 0.2329, Val Acc: 93.01%, Duration: 141.16s
+2024-12-03 20:47:46,344 INFO:Scenario: mixed, Epoch 27/50, Train Loss: 0.0870, Train Acc: 96.91%, Val Loss: 0.2685, Val Acc: 92.64%, Duration: 141.64s
+2024-12-03 20:50:18,393 INFO:Scenario: mixed, Epoch 28/50, Train Loss: 0.0835, Train Acc: 96.97%, Val Loss: 0.2630, Val Acc: 92.54%, Duration: 141.56s
+2024-12-03 20:52:50,638 INFO:Scenario: mixed, Epoch 29/50, Train Loss: 0.0818, Train Acc: 97.04%, Val Loss: 0.2434, Val Acc: 92.92%, Duration: 141.78s
+2024-12-03 20:55:25,647 INFO:Scenario: mixed, Epoch 30/50, Train Loss: 0.0784, Train Acc: 97.24%, Val Loss: 0.2565, Val Acc: 92.61%, Duration: 144.31s
+2024-12-03 20:55:25,649 INFO:Early stopping triggered for scenario: mixed at epoch 30
+2024-12-03 20:55:25,726 INFO:Testing model trained on mixed data on normal test data.
+2024-12-03 20:55:30,663 INFO:Scenario: mixed_normal, Test Loss: 0.2904, Test Accuracy: 92.42%
+2024-12-03 20:55:30,667 INFO:Testing model trained on mixed data on polluted test data.
+2024-12-03 20:55:37,455 INFO:Scenario: mixed_polluted, Test Loss: 0.2759, Test Accuracy: 90.96%
+2024-12-03 20:55:37,456 INFO:Completed all training and testing scenarios.
