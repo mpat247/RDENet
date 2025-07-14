@@ -227,36 +227,3 @@ outputs/
     }
 }
 ```
-
-## Device Support
-
-### Automatic Device Detection
-
-```python
-if hasattr(torch, 'mps') and torch.backends.mps.is_available():
-    device = torch.device("mps")      # Apple Silicon
-elif torch.cuda.is_available():
-    device = torch.device("cuda")     # NVIDIA GPU
-else:
-    device = torch.device("cpu")      # CPU fallback
-```
-
-## Common Issues and Solutions
-
-### Memory Issues
-
-- Reduce batch_size if GPU memory is insufficient
-- Use gradient checkpointing for large models
-- Enable mixed precision training
-
-### Convergence Problems
-
-- Adjust learning rate (try 1e-4 or 5e-4)
-- Increase patience for early stopping
-- Check data preprocessing pipeline
-
-### Performance Optimization
-
-- Use GPU acceleration when available
-- Implement data loading with multiple workers
-- Use batch normalization for stable training
