@@ -52,27 +52,6 @@ The models are evaluated on normal, polluted (rotated), and mixed datasets using
 - Validation Accuracy: 86.97% ± 0.15%
 - Training Loss: 0.395 ± 0.110
 
-## Repository Structure
-
-```text
-src/
-├── CNN.py                              # Standard CNN implementation
-├── RDECNN.py                          # RDENET with oscillation blocks
-├── Image_oscillation.py               # Oscillation block implementation
-├── Polluted_Images_Generation.py      # Data augmentation utilities
-├── Train_CNN.py                       # CNN training script
-├── Train_CNN_with_Cross_Validation.py # CNN cross-validation
-├── Train_RDECNN.py                    # RDENET training script
-└── Train_RDECNN_with_Cross_Validation.py # RDENET cross-validation
-
-outputs/
-├── cnn_with_resnet_cross_validation/   # CNN results
-└── rdecnn_with_resnet_cross_validation/ # RDENET results
-
-data/FashionMNIST/                      # Dataset storage
-docs/                                   # Documentation
-```
-
 ## Usage
 
 ### Training Standard CNN
@@ -98,15 +77,3 @@ python Train_RDECNN_with_Cross_Validation.py
 - scikit-learn
 - tqdm
 - PIL
-
-## Key Features
-
-- **Cross-validation**: 5-fold stratified cross-validation
-- **Multiple training scenarios**: Normal, polluted, and mixed datasets
-- **Comprehensive evaluation**: Training on different data types, testing on all scenarios
-- **Detailed logging**: Training progress and metrics tracking
-- **Model checkpointing**: Best model saving with early stopping
-
-## Documentation
-
-See `docs/` folder for detailed technical documentation and experimental results.
