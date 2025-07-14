@@ -1,5 +1,16 @@
 # Implementation Guide
 
+## Research Project Overview
+
+This implementation guide covers the research project "Enhancing CNN Robustness By Using Data Augmentation and Oscillation Block" (Luo et al., 2024), focusing on how structural modifications can improve CNNs for image classification tasks.
+
+## Research Objectives
+
+- Incorporate oscillation blocks to capture tilted features in rotated images
+- Apply preprocessing techniques (rotation, zoom, positional adjustments) to simulate real-world variations
+- Evaluate performance trade-offs between standard and enhanced CNN architectures
+- Demonstrate robustness improvements particularly for rotated data
+
 ## Setup and Installation
 
 ### Requirements
@@ -23,34 +34,38 @@ RDENET-Oscillation-Block/
 
 ### 1. Data Processing
 
-#### Polluted Images Generation (`Polluted_Images_Generation.py`)
+### Data Augmentation Implementation
+
+#### Rotation and Positioning (`Polluted_Images_Generation.py`)
 
 ```python
 class CRRNWEP:
     def __init__(self, range1=(-30, -15), range2=(15, 30), size=(28, 28)):
         # Custom Random Rotation and Noisy With EdgePadding
+        # Implements rotation, zoom, and positional adjustments
 ```
 
-Features:
+Key Features:
 
-- Random rotation in specified ranges
-- Edge padding with calculated edge colors
-- Gaussian noise addition option
-- Size normalization
+- Random rotation in specified ranges to simulate real-world variations
+- Edge padding with calculated edge colors for seamless transformations
+- Gaussian noise addition option for increased robustness
+- Size normalization to maintain consistency
 
-#### Image Oscillation (`Image_oscillation.py`)
+#### Oscillation Block Processing (`Image_oscillation.py`)
 
 ```python
 class BatchWise_Oscillate:
     def __init__(self, images):
-        # Processes batch of images through oscillation patterns
+        # Processes batch of images to capture tilted features
 ```
 
-Functions:
+Capabilities:
 
-- Splits images into blocks (4×4 or 7×7 grids)
-- Applies two different ring-based reordering patterns
-- Returns two oscillated versions of input
+- Splits images into blocks (4×4 or 7×7 grids) for detailed feature analysis
+- Applies two different ring-based reordering patterns to capture rotation variations
+- Returns two oscillated versions of input for enhanced feature representation
+- Designed specifically to handle tilted features without additional training data
 
 ### 2. Model Architectures
 
@@ -110,13 +125,13 @@ classifier.cross_validate(
 )
 ```
 
-### RDENET Training
+### Enhanced RDENET Training
 
 ```python
 from RDECNN import RDENet
 from Train_RDECNN_with_Cross_Validation import FashionMNIST_RDECNNClassifier
 
-# Initialize classifier
+# Initialize classifier with oscillation-enhanced architecture
 classifier = FashionMNIST_RDECNNClassifier(
     batch_size=32,
     lr=1e-3,
@@ -124,7 +139,7 @@ classifier = FashionMNIST_RDECNNClassifier(
     save_path='./outputs/rdenet_results'
 )
 
-# Run cross-validation
+# Run cross-validation specifically on rotated data to test oscillation block effectiveness
 classifier.cross_validate(
     training_loader=classifier.polluted_train_loader,
     training_type='polluted',

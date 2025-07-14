@@ -2,7 +2,11 @@
 
 ## Overview
 
-This document provides detailed information about the CNN and RDENET architectures implemented in this project.
+This document provides detailed information about the CNN and RDENET architectures implemented in this research project on "Enhancing CNN Robustness By Using Data Augmentation and Oscillation Block" (Luo et al., 2024).
+
+## Project Motivation
+
+The goal of this research is to enhance the performance of CNNs for image classification tasks by incorporating an oscillation block to capture tilted features in rotated images. The project applies preprocessing techniques such as rotation, zoom, and positional adjustments to simulate real-world variations in images.
 
 ## Standard CNN Architecture
 
@@ -41,14 +45,14 @@ Input (1×28×28) → CNN Feature Extractor → ResNet18 → Flatten → MLP →
 
 ### Key Innovation: Oscillation Block
 
-The oscillation block is the core component that differentiates RDENET from standard CNN:
+The oscillation block is the core component that differentiates RDENET from standard CNN, specifically designed to capture "tilted" features in rotated data without introducing new training data.
 
-#### Components
+#### Oscillation Block Elements
 
 1. **Main Path**: Standard convolution processing
-2. **Bypass Path One**: Processes first oscillation pattern
-3. **Bypass Path Two**: Processes second oscillation pattern
-4. **Concatenation**: Combines all three paths
+2. **Bypass Path One**: Processes first oscillation pattern for rotated features
+3. **Bypass Path Two**: Processes second oscillation pattern for rotated features
+4. **Concatenation**: Combines all three paths for comprehensive feature representation
 
 #### Oscillation Processing
 
@@ -78,13 +82,15 @@ class MappingLayer(nn.Module):
 
 ## Comparison
 
-| Component         | Standard CNN           | RDENET                        |
-| ----------------- | ---------------------- | ----------------------------- |
-| Input Processing  | Direct convolution     | Mapping layer + oscillation   |
-| Feature Paths     | Single path            | Three parallel paths          |
-| Rotation Handling | Data augmentation only | Built-in oscillation patterns |
-| Complexity        | Lower                  | Higher                        |
-| Parameters        | Fewer                  | More (due to multiple paths)  |
+| Component             | Standard CNN                 | RDENET                                                 |
+| --------------------- | ---------------------------- | ------------------------------------------------------ |
+| Input Processing      | Direct convolution           | Mapping layer + oscillation                            |
+| Feature Paths         | Single path                  | Three parallel paths                                   |
+| Rotation Handling     | Data augmentation only       | Built-in oscillation patterns for tilted features      |
+| Primary Strength      | General classification       | Enhanced performance on rotated data                   |
+| Performance Trade-off | Consistent across data types | Better on rotated data, slightly lower on normal/mixed |
+| Complexity            | Lower                        | Higher                                                 |
+| Parameters            | Fewer                        | More (due to multiple paths)                           |
 
 ## Implementation Details
 
